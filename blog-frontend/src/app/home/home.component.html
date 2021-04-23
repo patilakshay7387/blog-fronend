@@ -1,13 +1,43 @@
-<div class="row">
-  <div class="col-4" *ngFor="let blog of blogData">
+<div *ngFor="let blog of blogData">
+  <div class="col-12">
 
     <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <div class="card">
-            <img *ngIf="blog.cover_image" [src]="blog.cover_image" alt="Avatar" width="100%" height="70px">
-            <div class="card-body">
-              <h4 *ngIf="blog.title"><b>{{blog.title}}</b></h4>
-              <p class="description" (click)="blogView(blog.id)">{{blog.description}}</p>
+          <img *ngIf="blog.cover_image" [src]="blog.cover_image" class="cover-image">
+          <div class="blogInfo">
+            <div class="userInfo">
+              <span (click)="blogView(blog.id)">
+                <img class="userImage" *ngIf="blog.user.profile_image_90" [src]="blog.user.profile_image_90">
+              </span>
+              <span class="userName">{{blog?.user?.name}}
+                <span id="for" *ngIf="blog?.organization?.name">for </span>
+                <span> {{ blog?.organization?.name}}</span>
+              </span>
+              <div class="publishTime">{{blog.readable_publish_date}}</div>
             </div>
+            <h2 (click)="blogView(blog.id)">{{blog.title}}</h2>
+            <div class="tagList">
+              <span *ngFor="let tag of blog.tag_list">
+                <a [style]="getTagColor(tag,blog?.flare_tag)">#{{tag }} </a>
+              </span>
+            </div>
+            <div class="blogReaction">
+              <span>
+                <img src="../../assets/icons/like.svg" alt="">
+                {{blog.positive_reactions_count}} reactions
+              </span>
+              <span>
+                <img src="../../assets/icons/comment.svg" alt="">
+                {{blog.comments_count}} comment
+              </span>
+          
+              <span class=" mins">
+                {{blog.reading_time_minutes}} min read
+              </span>
+          
+              <button class=" saveButton">Save</button>
+            </div>
+        </div>
           </div>
       </div>
     </div>

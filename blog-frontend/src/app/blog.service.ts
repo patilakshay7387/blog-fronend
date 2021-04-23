@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 export class BlogService {
   constructor(private httpClient: HttpClient) { }
 
-  getBlog(blogId?) {
+  getBlog(blogId?: number) {
     const id = blogId ? blogId : '';
     return this.httpClient.get(`${environment.BASE_URL}${id}`);
   }

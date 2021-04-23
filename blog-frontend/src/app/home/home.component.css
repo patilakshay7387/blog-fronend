@@ -1,18 +1,24 @@
+h2{
+  margin-left: 47px;
+}
+
+#for{
+  font-weight: 300;
+}
 .card-container{
     margin-top: 30px;
 }
 
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
     margin-top: 30px;
   }
 
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+.cover-image{
+  height: 16rem;
+}
   .card-body {
     padding: 2px 16px;
   }
@@ -24,3 +30,61 @@
     white-space: normal;
     height: 215px;
   }
+
+  .userImage{
+    border-radius: 20px;
+    height: 35px;
+    width: 35px;
+    margin-top: 7px;
+  }
+
+  .userInfo{
+    padding: 10px;
+  }
+
+  .publishTime{
+    padding-left: 42px;
+    margin-top: -17px;
+    padding-left: 42px;
+    margin-top: -17px;
+    font-size: 13px;
+    color: gray;
+  }
+
+  .userName{
+    padding-left: 7px;
+    color: #4d5760;
+    font-weight: 500;
+  }
+  .tagList{
+    margin-left: 47px;
+   
+  }
+.tagList >  span{
+     padding-left: 5px; 
+}
+  .blogInfo{
+    padding: 20px 0;
+  }
+
+.blogReaction{
+  margin-left: 43px;
+  margin-top: 5px;
+}
+
+.mins{
+  position: absolute;
+    right: 80px;
+}
+
+.saveButton{
+  position: absolute;
+    right: 13px;
+    background: lightgray;
+    border-radius: 6px;
+    border-width: 0px;
+    border-color: lightgrey;
+    width: 60px;
+    height: 30px;
+    color: darkslategrey;
+}
