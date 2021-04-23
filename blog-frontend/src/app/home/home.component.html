@@ -3,10 +3,10 @@
 
     <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <div class="card">
-            <img *ngIf="blog.image" [src]="blog.image" alt="Avatar" width="100%" height="70px">
+            <img *ngIf="blog.cover_image" [src]="blog.cover_image" alt="Avatar" width="100%" height="70px">
             <div class="card-body">
-              <h4 *ngIf="blog.author"><b>{{blog.author}}</b></h4>
-              <p class="description" (click)="blogView(blog)">{{blog.description}}</p>
+              <h4 *ngIf="blog.title"><b>{{blog.title}}</b></h4>
+              <p class="description" (click)="blogView(blog.id)">{{blog.description}}</p>
             </div>
           </div>
       </div>

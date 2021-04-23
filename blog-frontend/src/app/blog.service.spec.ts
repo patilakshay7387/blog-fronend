@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MediastackService } from './mediastack.service';
+import { BlogService } from './blog.service';
 
 describe('MediastackService', () => {
-  let service: MediastackService;
+  let service: BlogService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MediastackService);
+    service = TestBed.inject(BlogService);
   });
 
   it('should be created', () => {
