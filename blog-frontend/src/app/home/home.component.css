@@ -7,12 +7,20 @@
     transition: 0.3s;
     width: 100%;
     margin-top: 30px;
-
   }
 
+  
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   .card-body {
     padding: 2px 16px;
+  }
+
+  .description{
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: normal;
+    height: 215px;
   }

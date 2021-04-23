@@ -8,6 +8,7 @@ import { BlogCreateComponent } from './blog-create/blog-create.component';
 import { BlogEditComponent } from './blog-edit/blog-edit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule,Routes} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import {RouterModule,Routes} from '@angular/router';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-
+    HttpClientModule,
 
     RouterModule.forRoot([
       {path:'home',component:HomeComponent},
       {path:'',redirectTo:'home', pathMatch:'full'},
       {path:'blog-create',component:BlogCreateComponent},
+      { path: 'blog-view', component: BlogViewComponent },
 
 
 
