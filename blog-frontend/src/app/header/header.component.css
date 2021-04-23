@@ -6,6 +6,7 @@ form.example input[type=text] {
     float: left;
     width: 450px;
     border-radius: 5px;
+    font-size: 10px;
     background: #f9fafa;
   }
   
