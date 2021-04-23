@@ -1,34 +1,14 @@
-<div class="container card-container">
+<div class="row">
+  <div class="col-4" *ngFor="let blog of blogData">
 
     <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-    <div class="row">
-      <div class="col-6 col-md-4">
         <div class="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <img *ngIf="blog.image" [src]="blog.image" alt="Avatar" width="100%" height="70px">
             <div class="card-body">
-              <h4><b>John Doe</b></h4> 
-              <p>Architect & Engineer</p> 
-            </div>
-          </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h4><b>John Doe</b></h4> 
-              <p>Architect & Engineer</p> 
-            </div>
-          </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h4><b>John Doe</b></h4> 
-              <p>Architect & Engineer</p> 
+              <h4 *ngIf="blog.author"><b>{{blog.author}}</b></h4>
+              <p class="description" (click)="blogView(blog)">{{blog.description}}</p>
             </div>
           </div>
       </div>
     </div>
 
-  </div>
