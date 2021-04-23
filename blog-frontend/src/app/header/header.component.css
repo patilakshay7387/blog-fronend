@@ -6,7 +6,7 @@ form.example input[type=text] {
     float: left;
     width: 450px;
     border-radius: 5px;
-    background: #f9fafa;
+    color: #f9fafa;
   }
   
   input:focus { 
