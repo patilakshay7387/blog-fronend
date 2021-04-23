@@ -8,9 +8,10 @@ import { BlogViewComponent } from './blog-view/blog-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, BlogViewComponent],
+  declarations: [AppComponent, HomeComponent, BlogViewComponent, HeaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

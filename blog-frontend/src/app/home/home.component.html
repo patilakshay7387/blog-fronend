@@ -1,5 +1,6 @@
 <div *ngFor="let blog of blogData">
   <div class="col-12">
+    <div class="row">
 
     <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <div class="card">
@@ -24,11 +25,13 @@
             <div class="blogReaction">
               <span>
                 <img src="../../assets/icons/like.svg" alt="">
-                {{blog.positive_reactions_count}} reactions
+                {{blog.positive_reactions_count}}
+                <span class="hide"> reactions </span>
               </span>
               <span>
                 <img src="../../assets/icons/comment.svg" alt="">
-                {{blog.comments_count}} comment
+                {{blog.comments_count}}
+                <span class="hide">comment</span>
               </span>
           
               <span class=" mins">
@@ -42,3 +45,5 @@
       </div>
     </div>
 
+  </div>
+  

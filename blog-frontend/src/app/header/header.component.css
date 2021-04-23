@@ -1,0 +1,51 @@
+form.example input[type=text] {
+    margin-top: -5px;
+    padding: 7px;
+    font-size: 17px;
+    border: 1px solid #b5bdc4;
+    float: left;
+    width: 450px;
+    border-radius: 5px;
+    background: #f9fafa;
+  }
+  
+  input:focus { 
+      outline: none !important;
+     
+      box-shadow: 2px 2px 2px #0012cc;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .log-in{
+    font-weight: 700;
+    font-size: 17px;
+    color: #0012cc !important;
+  }
+
+  .log-btn{
+    background-color: #00c;
+    border: none;
+    color: white !important;
+    padding: 6px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .navbar{
+    padding-left: 40px;
+  }
+.navbar-r{
+    /* float: right !important ;
+    margin-right: -15px; */
+}
